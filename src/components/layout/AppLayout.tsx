@@ -21,6 +21,7 @@ export default function AppLayout() {
             </div>
           </main>
         </div>
+        <Chatbot />
       </div>
     </SidebarProvider>
   );
