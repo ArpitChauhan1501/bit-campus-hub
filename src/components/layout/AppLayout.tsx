@@ -3,6 +3,7 @@ import { SidebarProvider } from "@/components/ui/sidebar";
 import { AppSidebar } from "./AppSidebar";
 import { TopBar } from "./TopBar";
 import { useAuth } from "@/context/AuthContext";
+import Chatbot from "@/components/Chatbot";
 
 export default function AppLayout() {
   const { user } = useAuth();
@@ -20,6 +21,7 @@ export default function AppLayout() {
             </div>
           </main>
         </div>
+        <Chatbot />
       </div>
     </SidebarProvider>
   );
