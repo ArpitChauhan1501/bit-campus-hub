@@ -24,7 +24,7 @@ export default function Login() {
   const [loading, setLoading] = useState(false);
 
   if (user) {
-    navigate("/dashboard", { replace: true });
+    navigate("/", { replace: true });
   }
 
   const submit = (e: React.FormEvent) => {
@@ -38,7 +38,7 @@ export default function Login() {
         return;
       }
       toast({ title: "Welcome back!", description: "You're signed in to BIT NEXUS." });
-      navigate("/dashboard", { replace: true });
+      navigate("/");
     }, 350);
   };
 
