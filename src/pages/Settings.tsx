@@ -14,7 +14,7 @@ const SETTINGS = [
 export default function Settings() {
   return (
     <div>
-      <PageHeader title="Settings" description="Customize Campus Hub to fit your workflow." />
+      <PageHeader title="Settings" description="Customize BIT NEXUS to fit your workflow." />
       <Card className="border-border/60 shadow-card">
         <CardContent className="divide-y divide-border p-0">
           {SETTINGS.map((s) => (
