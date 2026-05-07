@@ -24,7 +24,7 @@ export default function Login() {
   const [loading, setLoading] = useState(false);
 
   if (user) {
-    navigate("/", { replace: true });
+    navigate("/dashboard", { replace: true });
   }
 
   const submit = (e: React.FormEvent) => {
