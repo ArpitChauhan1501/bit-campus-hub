@@ -1,5 +1,5 @@
-import { GraduationCap } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
+import logo from "@/assets/bitnexus-logo.jpg";
 import { useLocation } from "react-router-dom";
 import {
   Sidebar,
