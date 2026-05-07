@@ -28,12 +28,10 @@ export function AppSidebar() {
     <Sidebar collapsible="icon" className="border-r border-sidebar-border">
       <SidebarHeader className="px-4 py-5">
         <div className="flex items-center gap-2.5">
-          <div className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-primary shadow-glow">
-            <GraduationCap className="h-5 w-5 text-primary-foreground" />
-          </div>
+          <img src={logo} alt="BIT NEXUS logo" className="h-9 w-9 rounded-xl object-cover shadow-glow" />
           {!collapsed && (
             <div className="flex flex-col leading-tight">
-              <span className="font-display text-lg font-bold tracking-tight">Campus Hub</span>
+              <span className="font-display text-lg font-bold tracking-tight">BIT NEXUS</span>
               <span className="text-[11px] text-muted-foreground">College Management</span>
             </div>
           )}
