@@ -38,7 +38,7 @@ export default function Login() {
         return;
       }
       toast({ title: "Welcome back!", description: "You're signed in to BIT NEXUS." });
-      navigate("/");
+      navigate("/dashboard", { replace: true });
     }, 350);
   };
 
