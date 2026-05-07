@@ -167,7 +167,7 @@ export const SEED_RESOURCES: Resource[] = [
 ];
 
 export const SEED_SKILLS: Skill[] = [
-  { id: "s1", title: "Full-Stack Web Development", level: "Intermediate", provider: "Campus Hub Academy", tag: "Web" },
+  { id: "s1", title: "Full-Stack Web Development", level: "Intermediate", provider: "BIT NEXUS Academy", tag: "Web" },
   { id: "s2", title: "Public Speaking Mastery", level: "Beginner", provider: "Toastmasters Club", tag: "Soft Skills" },
   { id: "s3", title: "Data Analytics with Python", level: "Intermediate", provider: "DataCamp", tag: "Data" },
   { id: "s4", title: "Product Management 101", level: "Beginner", provider: "Reforge", tag: "Career" },

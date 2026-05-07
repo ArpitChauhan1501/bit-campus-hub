@@ -92,7 +92,7 @@ export default function Chatbot() {
       {open && (
         <div
           role="dialog"
-          aria-label="Campus Hub chatbot"
+          aria-label="BIT NEXUS chatbot"
           className="fixed bottom-24 right-5 z-50 flex h-[520px] w-[calc(100vw-2.5rem)] max-w-sm flex-col overflow-hidden rounded-2xl border border-border/60 bg-card shadow-elegant animate-scale-in origin-bottom-right"
         >
           {/* Header */}

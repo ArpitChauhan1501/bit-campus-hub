@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { GraduationCap, Loader2 } from "lucide-react";
+import { Loader2 } from "lucide-react";
+import logo from "@/assets/bitnexus-logo.jpg";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -36,7 +37,7 @@ export default function Login() {
         toast({ title: "Login failed", description: res.error, variant: "destructive" });
         return;
       }
-      toast({ title: "Welcome back!", description: "You're signed in to Campus Hub." });
+      toast({ title: "Welcome back!", description: "You're signed in to BIT NEXUS." });
       navigate("/");
     }, 350);
   };
@@ -53,10 +54,8 @@ export default function Login() {
         <div className="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
         <div className="absolute -bottom-32 -right-16 h-96 w-96 rounded-full bg-primary-glow/30 blur-3xl" />
         <div className="relative flex items-center gap-2.5">
-          <div className="grid h-10 w-10 place-items-center rounded-xl bg-white/15 backdrop-blur">
-            <GraduationCap className="h-6 w-6" />
-          </div>
-          <span className="font-display text-xl font-bold">Campus Hub</span>
+          <img src={logo} alt="BIT NEXUS logo" className="h-10 w-10 rounded-xl object-cover" />
+          <span className="font-display text-xl font-bold">BIT NEXUS</span>
         </div>
 
         <div className="relative space-y-5">
@@ -80,7 +79,7 @@ export default function Login() {
         </div>
 
         <div className="relative text-xs text-primary-foreground/70">
-          © {new Date().getFullYear()} Campus Hub. Crafted for modern campuses.
+          © {new Date().getFullYear()} BIT NEXUS. Crafted for modern campuses.
         </div>
       </div>
 
@@ -88,10 +87,8 @@ export default function Login() {
       <div className="flex items-center justify-center bg-background px-5 py-12 sm:px-10">
         <div className="w-full max-w-md">
           <div className="mb-8 flex items-center gap-2.5 lg:hidden">
-            <div className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-primary text-primary-foreground">
-              <GraduationCap className="h-5 w-5" />
-            </div>
-            <span className="font-display text-xl font-bold">Campus Hub</span>
+            <img src={logo} alt="BIT NEXUS logo" className="h-10 w-10 rounded-xl object-cover" />
+            <span className="font-display text-xl font-bold">BIT NEXUS</span>
           </div>
 
           <h1 className="font-display text-3xl font-bold tracking-tight">Sign in</h1>
